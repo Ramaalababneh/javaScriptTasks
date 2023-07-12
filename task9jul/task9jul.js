@@ -44,6 +44,7 @@ Create an array represents your:
 const Favorites=["Yalanje","tennis","shawshank redemption"];
 console.log(Favorites);
 
+
 /*
 4
 Create a Variable to return the first element in an array 
@@ -66,6 +67,10 @@ Ex: lastOfArray(["t","u","g","x"]) => "x"
 const girls = ["rama","lena","rania","razan"];
 const lastElement= girls[3];
 console.log("first elemnt of array is " +lastElement);
+
+//better way : 
+// const litem = girls[girls.length-1];  
+// console.log("first elemnt of array is " +litem);
 /*
 6
 Using console make this array to be like this one (push, unshift, shift, pop)
@@ -91,19 +96,40 @@ Using the console try to figure out what the thing thats (push, unshift, shift, 
 
 var array2 = [5,9,-7,3.5]
 */
-var arrayy2 = []
-arrayy2.unshift(5)
-arrayy2.unshift(3)
-arrayy2.unshift(-7)
-arrayy2.unshift(9)
-arrayy2.unshift(5)
-console.log(arrayy2);
+// var arrayy2 = []
+// arrayy2.unshift(5)
+// arrayy2.unshift(3)
+// arrayy2.unshift(-7)
+// arrayy2.unshift(9)
+// arrayy2.unshift(5)
+// console.log(arrayy2);
+
+var array2 = [5,9,-7,3.5];
+
+array2.push(100);
+console.log(array2);
+
+array2.unshift(10);
+console.log(array2);
+
+array2.shift();
+console.log(array2);
+
+array2.pop();
+console.log(array2);
 /*
 8.
 Write a JavaScript program to sort the items of an array.
 Sample array : var arr1 = [ -3, 8, 7, 6, 5, -4, 3, 2, 1 ];
 Sample Output : -4,-3,1,2,3,5,6,7,8
 */
-var arr1 = [-3, 8, 7, 6, 5, -4, 3, 2, 1];
-arr1.sort((a, b) => a - b);
+// var arr1 = [-3, 8, 7, 6, 5, -4, 3, 2, 1];
+// arr1.sort((a, b) => a - b);
+// console.log(arr1);
+
+var arr1 = [ -3, 8, 7, 6, 5, -4, 3, 2, 1 ];
+// arr1.sort(); //[-3, -4, 1, 2, 3, 5, 6, 7, 8]
+arr1.sort(function(a, b) {
+    return a - b;
+});
 console.log(arr1);

@@ -13,20 +13,20 @@ switch (true)
     case (GPA<50) :
       window.alert("Fail");
         break;
-    case (GPA > 50 && GPA < 59) :
+    case (GPA >= 50 && GPA <= 59) :
       window.alert("E");
         break;
-    case (GPA > 60 && GPA < 69) :
+    case (GPA >= 60 && GPA <= 69) :
       window.alert("D");
         break;
-    case (GPA > 70 && GPA < 79) :
+    case (GPA >= 70 && GPA <= 79) :
     // window.alert("C");
       console.log("C");
         break;
-    case (GPA > 80 && GPA < 89) :
+    case (GPA >= 80 && GPA <= 89) :
         window.alert("B");
           break;
-    case (GPA > 90 && GPA <= 100) :
+    case (GPA >= 90 && GPA <= 100) :
         window.alert("A");
     
 }

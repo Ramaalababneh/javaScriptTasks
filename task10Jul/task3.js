@@ -38,7 +38,14 @@ console.log(arr2[0],arr2[1],arr2[2],arr2[3],arr2[4]);
 console.log(arr2[0],arr2[1],arr2[2],arr2[3],arr2[4],arr2[5]);
 console.log(arr2[0],arr2[1],arr2[2],arr2[3],arr2[4],arr2[5],arr2[6]);
 console.log(arr2[0],arr2[1],arr2[2],arr2[3],arr2[4],arr2[5],arr2[6],arr2[7]);
-
+ 
+// for(let a=1 ; a<=8 ; a++){
+//     let sol = " "; 
+//     for(let b=1 ; b<=a ; b++){
+//         sol += b + " ";
+//     }
+//     console.log(sol);
+// }
 
 
  /* 
