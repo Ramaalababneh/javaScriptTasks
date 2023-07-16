@@ -28,24 +28,29 @@ for(let i=0 ; i<=arr.length-1 ; i++)
    1 2 3 4 5 6 7 8 
 
 */
-const arr2=[1,2,3,4,5,6,7,8];
-console.log(arr2[0]);
-console.log(arr2[0],arr2[1]);
-console.log(arr2[0],arr2[1],arr2[2]);
-console.log(arr2[0],arr2[1],arr2[2],arr2[3]);
-console.log(arr2[0],arr2[1],arr2[2],arr2[3]);
-console.log(arr2[0],arr2[1],arr2[2],arr2[3],arr2[4]);
-console.log(arr2[0],arr2[1],arr2[2],arr2[3],arr2[4],arr2[5]);
-console.log(arr2[0],arr2[1],arr2[2],arr2[3],arr2[4],arr2[5],arr2[6]);
-console.log(arr2[0],arr2[1],arr2[2],arr2[3],arr2[4],arr2[5],arr2[6],arr2[7]);
+// const arr2=[1,2,3,4,5,6,7,8];
+// console.log(arr2[0]);
+// console.log(arr2[0],arr2[1]);
+// console.log(arr2[0],arr2[1],arr2[2]);
+// console.log(arr2[0],arr2[1],arr2[2],arr2[3]);
+// console.log(arr2[0],arr2[1],arr2[2],arr2[3]);
+// console.log(arr2[0],arr2[1],arr2[2],arr2[3],arr2[4]);
+// console.log(arr2[0],arr2[1],arr2[2],arr2[3],arr2[4],arr2[5]);
+// console.log(arr2[0],arr2[1],arr2[2],arr2[3],arr2[4],arr2[5],arr2[6]);
+// console.log(arr2[0],arr2[1],arr2[2],arr2[3],arr2[4],arr2[5],arr2[6],arr2[7]);
  
-// for(let a=1 ; a<=8 ; a++){
-//     let sol = " "; 
-//     for(let b=1 ; b<=a ; b++){
-//         sol += b + " ";
-//     }
-//     console.log(sol);
-// }
+for (let a = 1; a <= 8; a++) {
+    let sol = " ";
+    // Initialize an empty string variable named "sol"
+  
+    for (let b = 1; b <= a; b++) {
+      sol += b + " ";0
+      // Concatenate the value of "b" and a space to the "sol" string
+    }
+  
+    console.log(sol);
+    // Output the value of "sol" to the console
+  }
 
 
  /* 
