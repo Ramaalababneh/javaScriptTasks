@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task1 color picker</title>
+</head>
+<body>
+    <input type="color" id="pickcolor"> 
+    
+    <script>
+        const color = document.getElementById('pickcolor'); 
+        const body = document.getElementsByTagName('body')[0]; 
+
+        color.addEventListener('input', function () {
+            var colorvalue = color.value;
+            sessionStorage.setItem('color', colorvalue);
+            body.style.backgroundColor = sessionStorage.getItem('color');
+        })
+        const storedColor = sessionStorage.getItem('color');
+        if (storedColor.length>1) {
+            body.style.backgroundColor = storedColor;
+        }
+    </script>
+</body>
+</html>
