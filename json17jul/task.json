@@ -1,0 +1,7 @@
+{
+    "Name" : ["Rama" , "Lena" , "Marah" ] ,
+    "Age" : [23 , 24 ,23] ,
+    "Major": ["SE", "Tra" , "CBE" ],
+    "university" : ["JUST" , "Yarmouk" , "JUST"],
+    "Images" : [ "rama.jpg" , "leena.jpg" , "marah.jpeg"]
+}
