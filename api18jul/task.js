@@ -1,15 +1,9 @@
 const table = document.getElementById('tab');
-
-
-const startReq = new XMLHttpRequest();
-startReq.open('GET', 'https://fakestoreapi.com/products?limit=5');
-
-startReq.onload = function (){
-
-    const Obj = JSON.parse(this.responseText);
-
-
-        for(let i = 0 ; i < 5 ; i ++){
+    async function asFun()
+    {
+       const startReq = await fetch ('https://fakestoreapi.com/products?limit=5') // getAPI
+        const Obj     = await startReq.json () ;//Convert to json
+            for(let i = 0 ; i < Obj.length ; i ++){
 
             const row = document.createElement('tr');
             table.appendChild(row);
@@ -50,11 +44,6 @@ startReq.onload = function (){
             cell6.textContent = Obj[i].price;
             img.src = Obj[i].image;
             img.style.width = "50px";
-
-
- 
         }
-    }
-
-
-startReq.send();
+        }
+asFun();
